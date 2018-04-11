@@ -1,0 +1,65 @@
+extends common_parts/template.pug
+
+block vars
+	- var pageId = 2
+	- var page_name = "cement"
+	- var title__h1 = "Цемент с доставкой в Мытищи"
+
+	- var title = "Купить Цемент в Мытищах с доставкой, цены производителя";
+	- var description = "Цемент с доставкой до Мытищ, купить по лучшей цене в компании Лесстрон. Будем рады сотрудничеству";
+	- var keywords = "цемент Мытищи, купить цемент, цемент цена";
+
+	- var beton_class = "template-page template-page--cement"
+
+block header
+	include common_parts/header__template.pug
+
+
+block main
+
+	.template-article__wrap
+		.text-elements__wrap
+			h2.template__h2 Цемент с доставкой в Мытищи от производителя
+			p.
+				Компания «Лесстрон» занимается производством и доставкой качественного цемента в Мытищи. Мы используем только проверенные материалы, поэтому можем гарантировать качество продукции: цемент морозостоек, водостоек, а также сальфатостоек.
+			p.
+				У нас большой опыт, мы доставили нашу продукцию уже многим - как частникам, так и крупным строительным фирмам. Сотрудничеством с нами остаются довольны все!
+			p.
+				Если вы затрудняетесь в выборе марки цемента, вам на помощь придут наши менеджера, которые смогут помочь и подсказать.
+			p.
+				<b>Доставка цемента с заводов ООО "Азияцемент" и ООО "СЦЗ" от 4100 до 4300 руб за кубометр.</b>
+
+		.beton-template-price__table
+			.price-template-table__top-row
+				span.price-template-table__column-title Производитель
+				span.price-template-table__column-title Доставка
+				span.price-template-table__column-title Цена
+
+			.price-template-table__row
+				span.price-template-table__row-value ООО "Евроцемент"
+				span.price-template-table__row-value По всей Московской области
+				span.price-template-table__row-value 3 880 руб./м3
+
+			.price-template-table__row
+				span.price-template-table__row-value ООО "СЦЗ"
+				span.price-template-table__row-value Щёлковское, Носовихинское, Рязанское, Каширское, Варшавское, Энтузиастов шоссе, трасса "Дон"
+				span.price-template-table__row-value 3 980 руб./м3
+
+			.price-template-table__row
+				span.price-template-table__row-value ООО "СЦЗ"
+				span.price-template-table__row-value Калужское, Киевское, Минское, Можайское, Ярославское шоссе
+				span.price-template-table__row-value 4 080 руб./м3
+
+			.price-template-table__row
+				span.price-template-table__row-value ООО "СЦЗ"
+				span.price-template-table__row-value Рублевское, Новорижское, Волоколамское, Пятницкое, Ленинградское и Дмитровское шоссе
+				span.price-template-table__row-value 4 270 руб./м3
+
+			.template-promo-block
+				.promo-text__wrap
+					h3.promo__h3 Вопросы или заказ цемента:
+					.promo__contacts
+						span.promo__contacts__item 8-499-641-10-20
+						span.promo__contacts__item info@lesstron.com
+
+				a(href="#callback").big-orange-button.popup-js Заказать цемент

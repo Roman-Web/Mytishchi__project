@@ -1,0 +1,77 @@
+extends common_parts/template.pug
+
+block vars
+	- var page_name = "dostavka"
+	- var title__h1 = "Доставка и оплата"
+
+	- var title = "Информация по доставке - Лесстрон";
+	- var description = "Вся информация по доставке стройматериалов в города МО";
+	- var keywords = "информация по стоимости привоза стройматериалов";
+
+	- var beton_class = "template-page template-page--dostavka"
+
+block header
+	include common_parts/header__template.pug
+
+
+block main
+
+	.template-article__wrap
+		.text-elements__wrap
+			h2.template__h2 Организация доставки бетона и цемента
+			p
+				| Компания «Лесстрон» гарантирует своевременную доставку продукции. Наши условия:
+				ul.text__ul
+					li Объем одного автобетоносмесителя: от 7 до 12 кубических метра;
+					li Минимально возможный заказ: 3 кубических метра
+					li При заказе минимального количества бетона, оплата происходит за 7 кубических метров;
+					li Разгрузка происходит примерно в течение часа.
+			p.
+				Для доставки бетона в Мытищи, компания Лесстрон использует технику из своего автопарка, поэтому цена за доставку - минимальна. Мы гарантируем поставку в оговоренное время и место.
+
+
+		.beton-template-price__table.beton-template-price__table--dostavka
+			.price-template-table__top-row
+				span.price-template-table__column-title Расстояние
+				span.price-template-table__column-title Цена за перевозку м<sup><small>3</sup></small> груза
+
+			.price-template-table__row
+				span.price-template-table__row-value до 10 км
+				span.price-template-table__row-value 350 руб.
+
+			.price-template-table__row
+				span.price-template-table__row-value до 15 км
+				span.price-template-table__row-value 400 руб.
+
+			.price-template-table__row
+				span.price-template-table__row-value до 20 км
+				span.price-template-table__row-value 450 руб.
+
+			.price-template-table__row
+				span.price-template-table__row-value до 25 км
+				span.price-template-table__row-value 500 руб.
+
+			.price-template-table__row
+				span.price-template-table__row-value до 30 км
+				span.price-template-table__row-value 550 руб.
+
+			.price-template-table__row
+				span.price-template-table__row-value до 35 км
+				span.price-template-table__row-value 600 руб.
+
+			.price-template-table__row
+				span.price-template-table__row-value до 40 км
+				span.price-template-table__row-value 650 руб.
+
+			.price-template-table__row
+				span.price-template-table__row-value до 50 км
+				span.price-template-table__row-value договорная
+
+			.template-promo-block
+				.promo-text__wrap
+					h3.promo__h3 Вопросы или заказ цемента:
+					.promo__contacts
+						span.promo__contacts__item 8-499-641-10-20
+						span.promo__contacts__item info@lesstron.com
+
+				a(href="#").big-orange-button Заказать цемент
